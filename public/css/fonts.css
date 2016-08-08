@@ -1,0 +1,70 @@
+@font-face{
+    font-family: 'GenJyuuGothic';
+    src: url('../fonts/GenJyuuGothic-ExtraLight.woff') format('woff');
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'GenJyuuGothic';
+    src: url('../fonts/GenJyuuGothic-Light.woff') format('woff');
+    font-weight: 200;
+}
+@font-face{
+    font-family: 'GenJyuuGothic';
+    src: url('../fonts/GenJyuuGothic-Regular.woff') format('woff');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'GenJyuuGothic';
+    src: url('../fonts/GenJyuuGothic-Normal.woff') format('woff');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'GenJyuuGothic';
+    src: url('../fonts/GenJyuuGothic-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'GenJyuuGothic';
+    src: url('../fonts/GenJyuuGothic-Bold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'GenJyuuGothicL';
+    src: url('../fonts/GenJyuuGothicL-ExtraLight.woff') format('woff');
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'GenJyuuGothicL';
+    src: url('../fonts/GenJyuuGothicL-Light.woff') format('woff');
+    font-weight: 200;
+}
+@font-face{
+    font-family: 'GenJyuuGothicL';
+    src: url('../fonts/GenJyuuGothicL-Regular.woff') format('woff');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'GenJyuuGothicL';
+    src: url('../fonts/GenJyuuGothicL-Normal.woff') format('woff');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'GenJyuuGothicL';
+    src: url('../fonts/GenJyuuGothicL-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'GenJyuuGothicL';
+    src: url('../fonts/GenJyuuGothicL-Bold.woff') format('woff');
+    font-weight: 600;
+}
+
+
+.txt-black{color: #000;}
+.txt-white{color: #fff;}
+.txt-main{color: #f26122;}
+.txt-gray{color: #919191!important;}
+.txt-normal{font-weight: 400!important;}
+.txt-reg{font-weight: 300!important;}

@@ -1,0 +1,81 @@
+@import "../mixins.less";
+
+
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 768px){  
+    /*html, body{font-size: 13px;}*/
+    #topnav{height: 45px; padding: 8px;}
+    .nav_toggle .nav_menus{top: 35px;}
+    .btn_toggle, .btn_setting{font-size: 2rem;}
+    #main_body{
+        /*padding-bottom: 260px;*/ 
+        /*padding-top: 100px;*/
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .wrapper, .wrap{
+        .wrap_inner{height: calc(~"100vh - 45px - 60px - 204px");}
+    }
+    .mgy-120{
+        margin-top: 30px; margin-bottom: 60px;
+    }
+    .gr_btn{
+        /*max-width: 80%; display: block; margin: auto;*/
+    }
+    footer{padding-top: 15px; padding-bottom: 15px;}
+    #footnav{
+        ul{
+            li{
+                width: 100%;
+                text-align: left;
+                &:nth-child(1), &:nth-child(2){width: 100%; text-align: left; a{font-size: 1.1rem;}}
+                &:last-child{text-align: left;}
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){ 
+    html, body{font-size: 12px;}
+    #topnav{padding: 10px; height: auto; min-height: 45px;}
+    .index_logo{margin-bottom: 45px;}
+    .wrapper, .wrap{
+        /*margin: 10px 3px 20px;*/
+        .border-radius(5px);
+        .wrap_inner, .wrap_inner.pd-30{padding: 20px 10px;}
+    }
+    .pp_options .item{
+        padding: 20px 10px;
+    }
+    .gr_btn{
+        height: auto; position: relative;
+       i,img{border: none;}
+       &:after{
+           position: absolute;
+           content: ""; display: block; top: 0; left: 56px; bottom: 0; height: 100%; width: 2px; background: #fff;
+       }
+       span{padding: 13px 5px;}
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 480px){
+    
+}
+
+@media screen and (max-width: 380px){
+    
+}
+
+@media screen and (min-width: 1200px){
+  
+}
+
+
+
+
+
+

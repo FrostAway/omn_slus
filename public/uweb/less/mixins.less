@@ -1,0 +1,158 @@
+@mainbg: #f26122;
+@hovercl: #fff;
+@bgcl: #fff;
+@postbg: #dedede;
+@navbg: #fff;
+@bdcl: #ddd;
+@ftbg: #282828;
+@dropbg: #000;
+@hoverbg: #ed8456;
+@pcl: #414141;
+@spactive: #ebebeb;
+
+.bg_white{background: #fff;} 
+.inline-block{
+    display: inline-block;
+}
+.clearf{
+    clear: both;
+    &:after, &:before{
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+.rotate(@dg){
+    transform: rotate(@dg);
+    -moz-transform: rotate(@dg);
+    -webkit-transform: rotate(@dg);
+    -o-transform: rotate(@dg);
+}
+.sizing-border{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.sizing-content{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -o-box-sizing: content-box;
+}
+.appear(@show){
+    appearance: @show;
+    -moz-appearance: @show;
+    -o-appearance: @show;
+    -webkit-appearance: @show;
+}
+.transform(@trans){
+    transform:  @trans;
+    -moz-transform:  @trans;
+    -webkit-transform:  @trans;
+    -o-transform:  @trans;
+}
+.border-radius(@radius){
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -o-border-radius: @radius;
+}
+.top-left-radius(@radius){
+    border-top-left-radius: @radius;
+    -moz-border-top-left-radius: @radius;
+    -webkit-border-top-left-radius: @radius;
+    -o-border-top-left-radius: @radius;
+}
+.bottom-left-radius(@radius){
+    border-bottom-left-radius: @radius;
+    -moz-border-bottom-left-radius: @radius;
+    -webkit-border-bottom-left-radius: @radius;
+    -o-border-bottom-left-radius: @radius;
+}
+.bottom-right-radius(@radius){
+    border-bottom-right-radius: @radius;
+    -moz-border-bottom-right-radius: @radius;
+    -webkit-border-bottom-right-radius: @radius;
+    -o-border-bottom-right-radius: @radius;
+}
+.top-right-radius(@radius){
+    border-top-right-radius: @radius;
+    -moz-border-top-right-radius: @radius;
+    -webkit-border-top-right-radius: @radius;
+    -o-border-border-top-right-radius: @radius;
+}
+
+.button(@padding:8px 15px, @color: #fff, @background: #f4f4f4, @radius:0){
+    padding: @padding;
+    color: @color;
+    background: @background;
+    .border-radius(@radius);
+    border: none;
+    &:hover{opacity: 0.8;}
+}
+.shadown(@shadown){
+    box-shadow: @shadown;
+    -moz-box-shadow: @shadown;
+    -webkit-box-shadow: @shadown;
+    -o-box-shadow: @shadown;
+}
+.txtshadown(@shadown){
+    text-shadow: @shadown;
+    -moz-text-shadow: @shadown;
+    -webkit-text-shadow: @shadown;
+    -o-text-shadow: @shadown;
+}
+.transi(@transi){
+    transition: @transi;
+    -moz-transition: @transi;
+    -webkit-transition: @transi;
+    -o-transition: @transi;
+}
+.trans(@trans){
+    transform: @trans;
+    -moz-transform: @trans;
+    -webkit-transform: @trans;
+    -o-transform: @trans;
+}
+.bg2-gradient(@bg1, @bg2){
+    background: -moz-linear-gradient(@bg1, @bg2); 
+    background: -webkit-linear-gradient(@bg1, @bg2);
+    background: -o-linear-gradient(@bg1, @bg2);
+    background: linear-gradient(@bg1, @bg2);
+}
+
+.vmid{vertical-align: middle;}
+.mtop{margin-top: 12px; display: inline-block; height: 50px;}
+.larmg{margin: 120px 0;}
+.br_h{display: block; height: 35px;}
+
+.pdt-40{padding-top: 40px!important;}
+.pdy-120{padding-top: 120px; padding-bottom: 120px;}
+.no-pdy{padding-top: 0; padding-bottom: 0;}
+.pdl-20{padding-left: 20px;}
+
+.mgt-10{margin-top: 10px;}
+.mgb-0{margin-bottom: 0px!important;}
+.mgb-5{margin-bottom: 5px!important;}
+.mgb-10{margin-bottom: 10px!important;}
+.mgb-15{margin-bottom: 15px!important;}
+.mgb-20{margin-bottom: 20px!important;}
+.mgb-25{margin-bottom: 25px!important;}
+.mgb-30{margin-bottom: 30px!important;}
+.mgb-35{margin-bottom: 35px!important;}
+.mgb-40{margin-bottom: 40px!important;}
+.mgb-45{margin-bottom: 45px!important;}
+.mgb-50{margin-bottom: 50px!important;}
+.mgb-55{margin-bottom: 55px!important;}
+.mgb-60{margin-bottom: 60px!important;}
+
+.mgr-15{margin-right: 15px!important;}
+.mgr-25{margin-right: 25px!important;}
+.mgr-35{margin-right: 35px!important;}
+.mgr-45{margin-right: 45px!important;}
+.mgr-50{margin-right: 50px!important;}
+.mgy-120{margin-top: 120px; margin-bottom: 120px;}
+.mgr-100{margin-right: 100px;}
+
+.minh-200{min-height: 200px;}
+.maxw-480{max-width: 480px;}
+

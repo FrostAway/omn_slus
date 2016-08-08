@@ -1,0 +1,300 @@
+@import "../mixins.less";
+
+html{
+    font-size: 14px; 
+    position: relative;
+}
+.font_gtl{
+    font-family: 'GenJyuuGothicL', sans-serif; font-weight: 400;
+}
+.font_gt{
+    font-family: 'GenJyuuGothic', sans-serif; font-weight: 300;
+}
+body{
+    .font_gt;  
+}
+
+a{ 
+    &:hover, &:focus, &:active{
+        text-decoration: none; color: @hovercl;
+        outline: none;
+    }
+}
+ul{padding-left: 28px; }
+ol{padding-left: 15px;}
+
+#topnav{
+    background: @mainbg;
+    color: #fff;
+    height: 85px; padding: 25px 10px;
+}
+.nav_toggle{
+    position: relative;
+    .btn_toggle{
+        border: none; background: transparent; padding: 0; color: #fff;
+        &:target {
+            display: block;
+        }
+    }
+    .nav_menus{
+        .transi(all ease-in-out 0.3s);
+        left: -700px; display: block; top: 58px; .border-radius(0);
+        background: @dropbg; list-style: none; padding: 0; overflow: auto;
+        li{
+            a{
+                display: block; color: #fff; padding: 6px 15px;
+                &:hover{
+                    background: @mainbg;
+                }
+            }
+        }
+    }
+}
+.btn_setting{color: #fff;}
+.btn_toggle, .btn_setting{
+    font-size: 2.6rem; line-height: 0;
+}
+.nav_toggle.open{
+    .nav_menus{left: -10px;}
+}
+
+.head-title{
+    margin: 0; font-size: 1.8rem; .font_gtl; font-weight: 500;
+}
+
+.index_logo{
+    margin-bottom: 90px;
+    img{display: inline-block;}
+}
+
+.logon_btns{
+    a{
+        margin-bottom: 45px; font-size: 2.14rem;
+        .button(8px 17px, #fff, @mainbg, 5px);
+        .shadown(1px 1px #fff);
+        &:hover{color: #fff;}
+    }
+}
+
+#main_body{
+    background: url(../images/mytop_bg.jpg) no-repeat;
+    background-size: cover; background-position: center center;
+     padding-bottom: 60px;
+     padding-top: 60px;
+    /*padding-top: 145px;*/ 
+    /*padding-bottom: 215px;*/
+}
+
+.page-title{
+    font-size: 1.75rem; color: @mainbg; margin-top: 0;
+}
+.single-title{
+    font-size: 2.38rem; color: @mainbg; margin-top: 0;
+}
+.box-title, .b_sub{
+    font-size: 1.42rem; color: @mainbg; margin-top: 0; 
+}
+.sg_sub{
+    font-size: 2.1rem; color: #fff;
+}
+.b_sub{
+    color: @pcl;
+}
+.excerpt, .item_desc{
+    font-size: 1.1rem; color: @pcl;
+}
+.item_info, .item_val{font-size: 1.3rem;}
+.sp_desc{
+    font-size: 0.9rem; line-height: 1.73rem;
+}
+.minw_30{min-width: 30%;}
+.pd_item{padding: 10px; background: @postbg; .border-radius(1px)}
+
+.wrapper, .wrap{
+    .page-title{text-align: center;}
+    .border-radius(2px);
+    display: table; width: 100%;
+    position: relative;
+    .wrap_inner{
+        display: table-cell; vertical-align: middle; padding: 50px 60px; height: calc(~"100vh - 85px - 120px - 150px");
+    }
+    .wrap_inner.v_top{
+        vertical-align: top; 
+    }
+    .wrap_inner.pd-30{
+        padding: 30px;
+    }
+    .wrap_inner.no-pdy{
+        padding-top: 0; padding-bottom: 0;
+    }
+    .wrap_inner.h_auto{
+        height: auto; vertical-align: top;
+    }
+}
+.wrapper{
+    background: rgba(255, 255, 255, 1);
+}
+.wrap_box{
+    padding-top: 55px; padding-bottom: 55px;
+    border-bottom: 1px solid @mainbg;
+    &:last-child{border: none;}
+}
+.wrap_box.bd_top{border-top: 1px solid @mainbg;}
+
+.gr_btn{
+    width: 100%; border: none; height: 50px; display: inline-block; padding: 0;
+    background: @mainbg; color: #fff; cursor: pointer;
+    i, img{border-right: 2px solid #fff; float: left; min-width: 60px; height: 100%;  padding: 11px 15px; font-size: 2.2rem;}
+    img{height: 50px; width: auto;}
+    span{padding: 11px 5px; text-align: center; display: block; font-size: 1.4rem; font-weight: 300;}
+    .border-radius(7px);
+    .clearf;
+    &:hover{opacity: 0.8;}
+}
+.border_box{
+    padding: 20px; border: 1px solid @mainbg; 
+}
+.border_box.alert{.border-radius(0); padding: 20px;}
+.alert{padding: 10px;}
+.fl_txt{
+    padding: 10px 15px; border: 1px solid @mainbg;
+    height: 50px; font-size: 1.5rem;
+    width: 100%; color: @mainbg;
+}
+textarea.fl_txt{height: auto;}
+.p_show{padding: 10px 20px; margin: 0; font-size: 1.2rem;}
+.t_normal{font-size: 1.15rem!important;}
+.s_caret{
+    .appear(none);
+    background-image: linear-gradient(70deg, transparent 50%, #fff 50%), 
+        linear-gradient(110deg, #fff 50%, transparent 50%),
+        linear-gradient(to right, @mainbg, @mainbg);
+    background-repeat: no-repeat;
+    background-position: calc(~"100% - 9px") 17px, calc(~"100% - 3px") 17px, 100% 0;
+    background-size: 7px 14px, 7px 14px, 21px 100%;
+    padding-right: 30px; padding-left: 7px;
+}
+.gr_text{
+    span{
+        background: transparent; color: @mainbg; font-size: 2.7rem; border: 1px solid @mainbg; border-right: none; padding: 3px 10px;
+        i{min-width: 38px;}
+        img{height: 100%; width: auto; padding: 3px 6px;}
+        .border-radius(0);
+    }
+    input{color: #000;}
+}
+.gr_text.txt_bg{
+    input{
+        background: @mainbg; color: #fff;
+        &:focus{
+            background: @hoverbg;
+        }
+    }
+    span{
+        background: @hoverbg;
+        i{color: #fff;}
+    }
+}
+.form-group label{font-weight: 500;}
+.gr_file{
+    padding: 10px; border: 1px solid @mainbg; display: inline-block;
+}
+label{font-size: 1.1rem; color: @mainbg;}
+.pmess{
+    font-size: 1.1rem; font-family: 'GenJyuuGothicL', sans-serif;
+    a{text-decoration: underline; color: inherit;}
+}
+.gr_upload{
+    position: relative;
+    .input_upload{
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;
+    }
+}
+
+.back_btn{
+    display: inline-block;
+    padding: 13px 10px 13px 5px; color: #fff; font-size: 1.43rem; background: @mainbg; font-weight: 600;
+    i{font-size: 2rem}
+}
+
+.items .title, .items .title a, .gtitle{
+    font-size: 1.15rem; color: @mainbg; font-weight: 500;
+}
+.gtitle{margin-top: 0;}
+.items_table{
+    td{
+        padding: 13px!important; background: @postbg; width: 50%;  border: 5px solid #fff;
+        &:first-child{text-align: right; border-right-width: 15px;}
+    }
+}
+.c_box input{
+    height: 42px; padding: 10px 15px; margin-bottom: 10px; width: 100%;
+    border: 1px solid @postbg;
+    &:focus, &:active{border-color: @mainbg;}
+}
+.card_input{ max-width: 480px;}
+.c_boxs{margin-bottom: 10px;
+    margin-left: -5px; margin-right: -5px;
+    .c_box{
+        padding-left: 5px; padding-right: 5px;
+        float: left; width: 25%; 
+    }
+    .c_box_2{width: 50%;}
+    .clearf;
+}
+.passports{
+    .title, .title a{color: @pcl; font-size: 1.43rem;}
+}
+.pp_options{
+    .title, .title a{color: @pcl; line-height: 1.92rem;}
+    .item{
+        padding: 30px;
+    }
+    .item.active{
+        background: @spactive; .border-radius(5px);
+        .title{color: @mainbg;}
+    }
+}
+
+.ext_link{
+    display: inline-block; padding-bottom: 1px; border-bottom: 1px solid #fff; font-size: 0.9rem; color: #fff;
+    &:hover{color: @mainbg;}
+}
+.ext_link2{
+    display: inline-block; color: @mainbg; border-bottom: 1px solid @mainbg; padding-bottom: 1px;
+    &:hover{color: @hoverbg;}
+}
+.tl_btn{
+    display: inline-block; padding: 7px 15px; font-size: 1.15rem; color: #fff; background: @mainbg;
+    &:hover{opacity: 0.9;}
+    margin-right: 25px;
+    &:last-child{margin-right: 0;}
+}
+
+footer{
+    /*position: absolute; bottom: 0; left: 0; width: 100%;*/
+    background: @mainbg; padding: 45px 0;
+}
+#footnav{
+    ul{
+        li{
+            text-align: center; float: left;
+            display: inline-block; width: 20%;
+            a{
+                font-size: 1.1rem; color: #fff; display: inline-block; white-space: nowrap;
+                &:hover{text-decoration: underline;}
+            }
+            &:nth-child(1), &:nth-child(2){
+                width: 50%; margin-bottom: 10px; float: left;
+                a{font-size: 1.4rem; text-transform: uppercase; font-weight: 600;}
+            }
+            &:nth-child(3), &:first-child{
+                text-align: left;
+            }
+            &:nth-child(2), &:last-child{
+                text-align: right;
+            }
+        }
+        .clearf;
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Http/extroutes/test_routes.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/.env</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Listeners/PurchasedPassportListen.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Helpers/functions.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Providers/EventServiceProvider.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Events/PurchasedPassPort.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/resources/views/uw/customer/purchase_history.blade.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Models/Purchase.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/composer.json</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Http/Controllers/Uw/CustomerController.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Listeners/MessageCreatedListen.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/resources/views/uw/customer/post_purchase_gmo.blade.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Console/Kernel.php</file>
+            <file>file:/E:/OneDrive/wamp/www/omn_slus.com/app/Events/MessageCreated.php</file>
+        </group>
+    </open-files>
+</project-private>
